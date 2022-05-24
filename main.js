@@ -32,15 +32,16 @@ function closeModal() {
 
 function sendData() {
   let form = document.getElementById("form_agreement");
-
-  let name = form["name"].value;
-  let subject = form["subject"].value;
-  let type = form["type"].value;
+  let size = form["size"].value;
+  let complexity = form["complexity"].value;
+  let bool = form["bool"].value;
+  let author = form["author"].value;
 
   let obj = {
-     name,
-     subject,
-     type,
+    size,
+    complexity,
+    bool,
+    author,
   };
 
   console.table(obj);
