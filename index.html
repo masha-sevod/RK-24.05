@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Севоднясева РК</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="main.js"></script> 
+</head>
+
+
+
+<body onload="disableFormReload(); validateInputs()">
+
+  <header>
+ 
+    <h1>Вариант 7</h1>
+    <h2>Оригами</h2>
+    <button onclick="openModal()" class="openmodalform">Заполнить форму</button>
+</header>
+
+<main> 
+  <div class="modal">
+
+
+    <button class="modal-close" onclick="closeModal()">X</button>
+    <form id="form_agreement" onsubmit="sendData()">
+
+      <fieldset>
+        <legend>ОРИГАМИ. Заполните форму!</legend>
+        <div>
+          <label for="name">Размер листа A:</label>
+          <input class="size" id="size" type="number" min ="1" max ="6" name="size" placeholder="4"required>
+
+        </div>
+
+        
+      
+      </fieldset>
+
+      <div>
+        <input type="submit" class="subm" value="Отправить" />
+      </div>
+    </form>
+  </div>
+
+
+
+
+  <div class="background" onclick="closeModal()"></div>
+
+</main>
+
+<footer>
+  <div class="foot" >
+  <p>Севоднясева Мария</p>
+  <p>201-323</p>
+</div>
+</footer>
+
+
+</body>
+
+</html>
