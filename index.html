@@ -17,7 +17,7 @@
   <header>
  
     <h1>Вариант 7</h1>
-    <h2>Оригами</h2>
+    <h1>Оригами</h1>
     <button onclick="openModal()" class="openmodalform">Заполнить форму</button>
 </header>
 
@@ -36,8 +36,24 @@
 
         </div>
 
+        <div>
+          <label for="name">Сложность модели:</label>
+          <input name="complexity" id="type1" type="radio" value="easy"> <label for="complexity1">Легко</label><br>
+          <input name="complexity" id="type2" type="radio" value="medium" checked> <label for="complexity2">Средне</label><br>
+          <input name="complexity" id="type3" type="radio" value="hard"> <label for="complexity3">Сложно</label><br>
+        </div>
+
+        <div>
+          <label for="name">Модульность:</label>
+          <input name="bool" id="modulyes" type="radio" value="true"> <label for="yes">ДА</label><br>
+          <input name="bool" id="modulno" type="radio" value="false" checked> <label for="no">НЕТ</label><br>
         
-      
+        </div>
+
+        <div>
+          <label for="subject">Автор:</label>
+          <input type="name" id="author" name="author" placeholder="Севоднясева" required />
+        </div>
       </fieldset>
 
       <div>

@@ -14,7 +14,7 @@ header {
   position: fixed;
   top: 50vh;
   left: 50vw;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) ;
 
   
   padding-top: 5px;
@@ -27,16 +27,19 @@ header {
   border: 2px solid black;
   border-radius: 3px;
   background-color: #fff;
+  
 }
 
 .modal-active {
   display: flex;
   border-radius: 15px;
   z-index: 20;
+  
 }
 
 .modal-close {
   background-color: rgb(202, 109, 93);
+  transition: 0.5s all;
 }
 
 .background {
