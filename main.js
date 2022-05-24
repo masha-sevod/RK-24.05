@@ -1,3 +1,5 @@
+
+
 function disableFormReload() {
   let form = document.getElementById("form_agreement");
   form.addEventListener("submit", (e) => e.preventDefault());
